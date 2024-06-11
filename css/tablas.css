@@ -1,0 +1,23 @@
+
+.tablas
+{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    padding: 10px;
+}
+
+    .tb-principal
+    {
+        background-color: rgb(196, 197, 255);
+        padding: 10px;
+        border: 2px solid black;
+        color: rgb(88, 106, 222);
+    }
+    .tb-filas
+    {
+        background-color: antiquewhite;
+        padding: 10px;
+        border: 2px solid black;
+    }

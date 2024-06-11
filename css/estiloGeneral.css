@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(107, 124, 165);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background-image: url(/img/Cafe.jpg);
+    image-resolution: 100%;
+    image-rendering: optimizeQuality;
+    height: 400px;
+    max-height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+    hr 
+    {
+        border: 1px solid rgb(127, 127, 246);
+        width: 100%;
+    }
+    h1 
+    {
+        font-size: 1.4em;
+    }
+    h2 
+    {
+        font-size: 1.2em;
+    }
+    li 
+    {
+        text-align: left;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+.presentacion {
+    padding: 2%;
+    max-width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    color: white;
+}
+.nav-cuerpo {
+    background-color: rgb(243, 212, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.btn-barra {
+    background-color: rgb(181, 194, 241);
+    box-shadow: 2px;
+    width: 120px;
+    max-width: 120px;
+    text-align: center;
+    align-self: center;
+    margin-right: 10px;
+    a
+    {
+        color: white;
+    }
+}
+table {
+    margin: 0 auto;
+}

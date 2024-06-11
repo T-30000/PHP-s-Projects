@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/b3/13/ff/b313ff8a2ace90041d7c88f4019d7dc2.jpg">
+    <link rel="stylesheet" href="/css/estiloGeneral.css">
+    <link rel="stylesheet" href="/css/tablas.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-cuerpo">
+        <div class="container-fluid">
+            <a class="navbar-brand rounded" href="/html/principal.html">
+                <img src="https://i.pinimg.com/564x/0d/5a/ca/0d5acaec54a1a7132fd55e83552f9a70.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rounded-circle">
+                La gran orquesta
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item btn-barra rounded overflow-hidden"><a href="/html/Musicos.html" class="nav-link active">Musicos</a></li>
+                    <li class="nav-item btn-barra rounded overflow-hidden"><a href="/html/Conciertos.html" class="nav-link active">Conciertos</a></li>
+                    <li class="nav-item btn-barra rounded overflow-hidden"><a href="/html/Temporadas.html" class="nav-link active">Temporadas</a></li>
+                    <li class="nav-item btn-barra rounded overflow-hidden"><a href="/html/Programas.html" class="nav-link active">Programas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container-fluid">
+        <h1>Bienvenido a la gran orquesta</h1><hr>
+        <p>Gioser Andre Dzib Chan</p>
+        <p>Cristian Gonzales</p>
+    </header>
+    <div class="presentacion container-fluid">
+        <h2>Aqui esta la base de datos de los musicos</h2>
+        <p>A continuacion podras ver claramente la base de datos correspondiente a los musicos</p>
+    </div>
+    <div class="tablas container-fluid">
+        <table>
+            <tr>
+                <th class="tb-principal">Nombre</th>
+                <th class="tb-principal">Apellido</th>
+                <th class="tb-principal">Genero</th>
+                <th class="tb-principal">Instrumento</th>
+                <th class="tb-principal">Estado</th>
+                <th class="tb-principal">Nacionalidad</th>
+                <th class="tb-principal">Fecha de ingreso</th>
+                <th class="tb-principal">Opciones</th>
+            </tr>
+            <!-- Aquí van las filas de la tabla -->
+            <tr>
+                <td class="tb-filas">Carlos</td>
+                <td class="tb-filas">Bodoque</td>
+                <td class="tb-filas">Masculino</td>
+                <td class="tb-filas">Instrumento</td>
+                <td class="tb-filas">Estado</td>
+                <td class="tb-filas">Mexicano</td>
+                <td class="tb-filas">2024-11-27</td>
+                <td class="tb-filas">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateMusico"> Actualizar</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMusico">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb-filas">Carlos</td>
+                <td class="tb-filas">Bodoque</td>
+                <td class="tb-filas">Masculino</td>
+                <td class="tb-filas">Instrumento</td>
+                <td class="tb-filas">Estado</td>
+                <td class="tb-filas">Mexicano</td>
+                <td class="tb-filas">2024-11-27</td>
+                <td class="tb-filas">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateMusico"> Actualizar</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMusico">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb-filas">Carlos</td>
+                <td class="tb-filas">Bodoque</td>
+                <td class="tb-filas">Masculino</td>
+                <td class="tb-filas">Instrumento</td>
+                <td class="tb-filas">Estado</td>
+                <td class="tb-filas">Mexicano</td>
+                <td class="tb-filas">2024-11-27</td>
+                <td class="tb-filas">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateMusico"> Actualizar</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMusico">Eliminar</button>
+                </td>
+            </tr>
+            <!-- Terminan las filas de la tabla -->
+        </table>     
+    </div>
+
+    <footer class="container-fluid">
+        <h1>Más informacion</h1>
+        <hr>
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <h2>Relaciones entre las tablas</h2>
+                    <ul>
+                        <li>Musicos a Conciertos</li>
+                        <li>Musico a Secciones</li>
+                        <li>Pocision a Seccion</li>
+                        <li>Conciertos a Programa</li>
+                        <li>Programas a Temporada</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Datos de atributos para esta tabla</h2>
+                    <ul class="navbar-nav">
+                        <li><b>Nombre: </b>Varchar(50)</li>
+                        <li><b>Apellido: </b>Varchar(50)</li>
+                        <li><b>Sexo: </b>Varchar(50)</li>
+                        <li><b>Instrumento: </b>Varchar(50)</li>
+                        <li><b>Estado: </b>Varchar(50)</li>
+                        <li><b>Nacionalidad: </b>Varchar(50)</li>
+                        <li><b>Fecha de ingreso: </b>Date</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Informacion</h2>
+                    <ul>
+                        <li><b>Escuela: </b>Universidad Tecnologica Metropolitana</li>
+                        <li><b>Carrera: </b>Desarrollo de Software Multiplataforma</li>
+                        <li><b>Periodo: </b>Tercer Cuatrimestre</li>
+                        <li><b>Grupo: </b>A</li>
+                        <li><b>Materia: </b>Bases de Datos para Aplicaciones</li>
+                        <li><b>Profesora: </b>Marlene</li>
+                        <li><b>Alumno 1: </b>Gioser Andre</li>
+                        <li><b>Alumno 2: </b>Cristian Gonzales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteMusico" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="deleteMusicoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="deleteMusicoLabel">¿Esta seguro que desea eliminar este musico?</h1>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="updateMusico" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="updateMusicoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="updateMusicoLabel">Modificar a Musico</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">💀</span>
+                        <input type="text" class="form-control" placeholder="Nombre del musico" aria-label="nombreMusico" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon2">☠️</span>
+                        <input type="text" class="form-control" placeholder="Apellido del musico" aria-label="apellidoMusico" aria-describedby="basic-addon2">
+                    </div>
+                    <select class="form-select  mb-3" aria-label="Small select example">
+                        <option selected>Seleccione el instrumento principal del musico</option>
+                        <option value="1">Guitarra electrica</option>
+                        <option value="2">Guitarra acustica</option>
+                        <option value="3">Piano</option>
+                        <option value="4">Violin</option>
+                        <option value="5">Bajo</option>
+                        <option value="6">Tambores</option>
+                        <option value="7">Flautas</option>
+                        <option value="8">Clarinete</option>
+                    </select>
+                    <select class="form-select mb-3" aria-label="Small select example">
+                        <option selected>Sexo de musico</option>
+                        <option value="1">Mascuilino</option>
+                        <option value="2">Femenino</option>
+                    </select>
+
+                    <select class="form-select  mb-3" aria-label="Small select example">
+                        <option selected>Estado del musico</option>
+                        <option value="1">Activo</option>
+                        <option value="2">Jubilado</option>
+                    </select>
+                    <select class="form-select  mb-3" aria-label="Small select example">
+                        <option selected>Nacionalidad del musico</option>
+                        <option value="1">Argentino</option>
+                        <option value="2">Mexicano</option>
+                        <option value="3">Peruano</option>
+                        <option value="4">Chileno</option>
+                        <option value="5">Estadounidense</option>
+                        <option value="6">Canadience</option>
+                        <option value="7">Frances</option>
+                        <option value="8">Brsileño</option>
+                        <option value="9">Japones</option>
+                        <option value="10">Chino</option>
+                    </select>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="fechaMusico">Fehca de ingreso del musico</label>
+                        <input type="Date" class="form-control" id="fechaMusico">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
